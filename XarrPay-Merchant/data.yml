@@ -1,0 +1,13 @@
+additionalProperties:
+  key: XarrPay-Merchant
+  name: XarrPay商户版
+  tags:
+    - Tool
+  shortDescZh: 一站式支付服务,提供一流的交互,高性能的服务
+  shortDescEn: One-stop payment service, providing first-class interaction and high-performance services
+  type: tool 
+  crossVersionUpdate: true
+  limit: 0
+  website: https://docs.xarr.cn
+  github: https://docs.xarr.cn
+  document: https://docs.xarr.cn

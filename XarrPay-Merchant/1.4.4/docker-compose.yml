@@ -1,0 +1,22 @@
+services:
+  1panel-apps:
+    container_name: xarr-pay-merchant
+    restart: always
+    networks:
+      - 1panel-network
+    ports:
+      - "32000:32000"
+    volumes:
+      - ./plugins:/app/plugins
+      - ./config:/app/config
+      - ./runtime:/app/runtime
+    environment: 
+      - TZ=Asia/Shanghai
+    entrypoint: /app/xarr-pay-merchant
+    image: xiexiaosheng997/xarr-pay-merchant:1.4.4
+    labels:  
+      createdBy: "Apps"
+
+networks:
+  1panel-network:
+    external: true
